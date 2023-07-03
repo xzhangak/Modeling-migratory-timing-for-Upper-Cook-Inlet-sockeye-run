@@ -5,7 +5,7 @@
 #O F F S H O R E   T E S T   F I S H I N G
 #N 0 N - L I N E A R   C U R V E   F I T   P R O G R A M 
 
-obs.cpue<-read.table("obsCPUE2022.csv", sep = ",", header=T)#input observed daily cpue from test fishery.table
+obs.cpue<-read.table("obsCPUE2022.csv", sep = ",", header=T) #input observed daily cpue from 2022 OTF test fishery table
 x<-obs.cpue$dailyCPUE #to calculate cumulated cpue below
 obs.cpue$ccumCPUE[!is.na(x)] <- cumsum(na.omit(x)) #calculate accumulated cpue from daily cpue
 #n<-length(obs.cpue$d) 
