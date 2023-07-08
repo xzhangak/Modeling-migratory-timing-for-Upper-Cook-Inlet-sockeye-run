@@ -30,7 +30,7 @@ coeffs
 midrun<- -coeffs[1]/coeffs[2] # -a/b
 names(midrun) <- NULL
 midrun
-#the date of 50% of the total run passed
+#the date of 50% of the total run have passed
 as.Date("06/24", '%m/%d') + round(midrun) -1
 
 #Method 2:
@@ -65,5 +65,5 @@ run_timing<- function (mydata)
 
 s<-run_timing(mydata) #call run_timing model function
 s
-#the date of 50% of the total run passed
+#the date of 50% of the total run have passed
 as.Date("06/24", '%m/%d') + round(s$midrun) -1
